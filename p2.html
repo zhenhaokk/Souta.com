@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="second.css">
+        <script src="script.js" charset="utf-8"></script>
+        <title>SOUTA</title>
+    </head>
+
+    <body>
+        <div class="top-head hide-small">
+            <div class="bar xlarge black opacity hover-opacity-off animate-left" id="myNavbar">
+              
+              <a href="p1.html" onclick="bar_close()" class="bar-item button">HOME</a>
+              <a href="#menu" onclick="bar_close()" class="bar-item button">MENU</a>
+              
+              <a href="#myMap" onclick="bar_close()" class="bar-item button">CONTACT</a>
+              
+            </div>
+        </div>
+      
+          
+          <!-- Overlay effect when opening sidebar on small screens -->
+          <div class="overlay hide-large animate-opacity" onclick="bar_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+       
+        <img src="logo.jpeg" class="logo image greyscale" style="width:100%;">
+        
+        <!-- menu -->
+        <div class="menu-container black padding-64 xxlarge" id="menu">
+            <div class="content">
+            
+              <h1 class="center jumbo Tm" style="margin-bottom:64px">THE MENU</h1>
+              <div class="row center border">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Entree');" id="myLink">
+                    <div class="col s4 tablink padding-large hover-red">Entree</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Sushi-Rolls');" id="myLink">
+                    <div class="col s4 tablink padding-large hover-red">Sushi Rolls</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Sashimi');" id="myLink">
+                    <div class="col s4 tablink padding-large hover-red">Sashimi</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Hot-Food');" id="myLink">
+                  <div class="col s4 tablink padding-large hover-red">Hot Food</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Bowl');">
+                  <div class="col s4 tablink padding-large hover-red">Bowl</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Udon');">
+                  <div class="col s4 tablink padding-large hover-red">Udon</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Ramen');">
+                    <div class="col s4 tablink padding-large hover-red">Ramen</div>
+                  </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
+                    <div class="col s4 tablink padding-large hover-red">Desserts</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Extra');">
+                    <div class="col s4 tablink padding-large hover-red">Extra</div>
+                </a>
+              </div>
+          
+              <div id="Entree" class="container menu padding-32 white">
+                <h1><b>SALMON CARPACCIO</b> <span class="right tag dark-grey round">$10.8</span></h1>
+                <p class="text-grey">Seared salmon slice topped with tomato, cucumber & flying fish roe with yuzu sauce</p>
+                <hr>
+             
+                <h1><b>CHICKEN KARAAGE</b> <span class="right tag dark-grey round">$8.8</span></h1>
+                <p class="text-grey">Fried marinated chicken thigh with mayo</p>
+                <hr>
+                
+                <h1><b>TAMAGOYAKI</b> <span class="right tag dark-grey round">$4.8</span></h1>
+                <p class="text-grey">Sweet egg omelet</p>
+                <hr>
+          
+                <h1><b>EDAMAME	(VG)</b> <span class="right tag dark-grey round">$4.8</span></h1>
+                <p class="text-grey">Green soy bean</p>
+                <hr>
+          
+                <h1><b>HARU MAKI	 (VG)</b> 
+                    <!-- <span class="tag red round">Hot!</span> -->
+                    <span class="right tag dark-grey round">$4.8</span></h1>
+                <p class="text-grey">Vegetable spring roll (2pcs)</p>
+                <hr>
+          
+                <h1><b>KOROKKE (VG)	</b> 
+                    <!-- <span class="tag grey round">New</span> -->
+                    <span class="right tag dark-grey round">$6.8</span></h1>
+                <p class="text-grey">Crumbed potato & vegetable croquette</p>
+                <hr>
+
+                <h1><b>PORK GYOZA</b> <span class="right tag dark-grey round">$8.8</span></h1>
+                <p class="text-grey">Pan fried pork dumpling with mayo</p>
+                <hr>
+                <h1><b>VEGE GYOZA (VG)</b> <span class="right tag dark-grey round">$7.8</span></h1>
+                <p class="text-grey">Pan fried vegetable dumpling with homemade vinegar	</p>
+                <hr>
+                <h1><b>AGEDASHI TOFU</b> <span class="right tag dark-grey round">$4.8</span></h1>
+                <p class="text-grey">Deep fried bean curd & bonito flakes in donburi sauce</p>
+                <hr>
+                <h1><b>CRAB TEMPURA</b> <span class="right tag dark-grey round">$8.8</span></h1>
+                <p class="text-grey">Crispy soft shell crab in tempura batter with flying fish roe</p>
+                <hr>
+                <h1><b>NASU MISO (VG)</b> <span class="right tag dark-grey round">$6.8</span></h1>
+                <p class="text-grey">Fried eggplant with sweet miso sauce</p>
+                <hr>
+                <h1><b>WASABI SALMON CHIPS</b> <span class="right tag dark-grey round">$9.8</span></h1>
+                <p class="text-grey">Wasabi-mayo marinated chopped salmon, onion, lettuce &salmon roe on pastry chip</p>
+                <hr>
+                <h1><b>SEAFOOD TEMPURA</b> <span class="right tag dark-grey round">$9.8</span></h1>
+                <p class="text-grey">Deep fried prawn, calamari, salmon & vegetable in tempura batter</p>
+                <hr>
+                <h1><b>BEEF TATAKI</b> <span class="right tag dark-grey round">$10.8</span></h1>
+                <p class="text-grey">Marinated eye fillet with ponzu sauce, sliced onion & alfalfa</p>
+                <hr>
+                <h1><b>TAKOYAKI</b> <span class="right tag dark-grey round">$7.8</span></h1>
+                <p class="text-grey">Octopus ball with mayo (5pcs)</p>
+                <hr>
+                <h1><b>WAKAME SALAD (VG)</b> <span class="right tag dark-grey round">$8.8</span></h1>
+                <p class="text-grey">Marinated seaweed on mixed salad with yuzu sauce</p>
+                <hr>
+                <h1><b>GREEN SALAD (VG)</b> <span class="right tag dark-grey round">$7.8</span></h1>
+                <p class="text-grey">Seasonal vegetables on mixed salad with sesame dressing</p>
+                <hr>
+              </div>
+          
+              <div id="Sushi-Rolls" class="container menu padding-32 white">
+                <h1><b>ABURI BEEF TATAKI ROLL </b> <span class="right tag dark-grey round">$11.8</span></h1>
+                <p class="text-grey">Seared eye fillet slice on veggies roll with teriyaki sauce & wasabi mayo</p>
+                <hr>
+                <h1><b>SPICY CRISPY SALMON	</b> <span class="right tag dark-grey round">$10.8</span></h1>
+                <p class="text-grey">Salmon, avocado & cucumber with tempura flake, chilli powder & spicy mayo</p>
+                <hr>
+                <h1><b>SALMON VALCANO</b> <span class="right tag dark-grey round">$11.8</span></h1>
+                <p class="text-grey">Seared salmon on California roll with teriyaki sauce, spicy mayo & tempura flake</p>
+                <hr>
+                <h1><b>TIGER ROLL</b> <span class="right tag dark-grey round">$12.8</span></h1>
+                <p class="text-grey">Avocado slice on chicken katsu roll with tempura flake & mayo</p>
+                <hr>
+                <h1><b>YAKINUKU ROLL</b> <span class="right tag dark-grey round">$9.8</span></h1>
+                <p class="text-grey">Eye fillet, alfalfa & onion with teriyaki sauce & mayo</p>
+                <hr>
+                <h1><b>CHICKEN KATSU ROLL </b> <span class="right tag dark-grey round">$8.8</span></h1>
+                <p class="text-grey">Chicken cutlet & avocado</p>
+                <hr>
+                <h1><b>CALIFORNIA ROLL</b> <span class="right tag dark-grey round">$8.8</span></h1>
+                <p class="text-grey">Tamago, cucumber, avocado & flying fish roe</p>
+                <hr>
+                <h1><b>SPIDER ROLL</b> <span class="right tag dark-grey round">$10.8</span></h1>
+                <p class="text-grey">Soft shell crab tempura & flying fish roe</p>
+                <hr>
+                <h1><b>COOKED TUNA ROLL</b> <span class="right tag dark-grey round">$8.8</span></h1>
+                <p class="text-grey">Marinated cooked tuna & grated carrot with cucumber</p>
+                <hr>
+                <h1><b>TERIYAKI CHICKEN ROLL</b> <span class="right tag dark-grey round">$8.8</span></h1>
+                <p class="text-grey">Teriyaki chicken & cucumber</p>
+                <hr>
+                <h1><b>SALMON & AVO</b> <span class="right tag dark-grey round">$11.8</span></h1>
+                <p class="text-grey">Salmon. avocado & salmon roe on California roll</p>
+                <hr>
+                <h1><b>GREEN SALAD ROLL (VG)</b> <span class="right tag dark-grey round">$10.8</span></h1>
+                <p class="text-grey">Boiled lettuce on veggie roll with sesame dressing</p>
+                <hr>
+                <h1><b>DRAGON ROLL</b> <span class="right tag dark-grey round">$12.8</span></h1>
+                <p class="text-grey">Grilled eel & avocado slice on crumbed prawn roll with teriyaki sauce & mayo</p>
+                <hr>
+                <h1><b>CRUNCHY ROLL	</b> <span class="right tag dark-grey round">$9.8</span></h1>
+                <p class="text-grey">Tempura prawn and avocado roll topped with tempura flake & flying fish roe</p>
+                <hr>
+                <h1><b>VEGGIE ROLL (VG)	</b> <span class="right tag dark-grey round">$8.8</span></h1>
+                <p class="text-grey">Sun-dried tomato, cucumber, avocado & pickled vegetables</p>
+                <hr>
+              </div>
+              <div id="Sashimi" class="container menu padding-32 white">
+                <h1><b>ABURI SALMON & SCALLOP</b> 
+                    <!-- <span class="tag grey round">Popular</span> -->
+                <span class="right tag dark-grey round">$14.8</span></h1>
+                <p class="text-grey">Seared scallop & salmon roe on salmon wrap (4pcs)</p>
+                <hr>
+             
+                <h1><b>SALMON IKURA</b> <span class="right tag dark-grey round">$14.8</span></h1>
+                <p class="text-grey">Salmon roe on salmon wrap (4pcs)</p>
+                <hr>
+                
+                <h1><b>ABURI SUSHI PLATE</b> <span class="right tag dark-grey round">$20.8</span></h1>
+                <p class="text-grey">Seared salmon, scallop, eye fillet, tuna, prawn, unagi, octopus & baby rolls</p>
+                <hr>
+          
+                <h1><b>SMALL SASHIMI</b> <span class="right tag dark-grey round">$11.8</span></h1>
+                <p class="text-grey">Tuna & salmon (8pcs)</p>
+                <hr>
+                <h1><b>LARGE SASHIMI</b> <span class="right tag dark-grey round">$22.8</span></h1>
+                <p class="text-grey">Tuna, salmon, scallop, baby rolls (16pcs)</p>
+                <hr>
+                <h1><b>SALMON</b> <span class="right tag dark-grey round">$5.8</span></h1>
+                <p class="text-grey">Salmon nigiri (2pcs)</p>
+                <hr>
+                <h1><b>SALMON ABURI</b> <span class="right tag dark-grey round">$5.8</span></h1>
+                <p class="text-grey">Seared salmon nigiri (2pcs)</p>
+                <hr>
+                <h1><b>UNAGI</b> <span class="right tag dark-grey round">$6.8</span></h1>
+                <p class="text-grey">Grilled eel nigiri (2pcs)</p>
+                <hr>
+                <h1><b>MAGURO</b> <span class="right tag dark-grey round">$6.8</span></h1>
+                <p class="text-grey">Tuna nigiri (2pcs)</p>
+                <hr>
+                <h1><b>HOTATE ABURI </b> <span class="right tag dark-grey round">$8.8</span></h1>
+                <p class="text-grey">Seared scallop nigiri (2pcs)</p>
+                <hr>
+                <h1><b>SHRIMP</b> <span class="right tag dark-grey round">$6.8</span></h1>
+                <p class="text-grey">Shrimp nigiri (2pcs)</p>
+                <hr>
+                <h1><b>TAKO</b> <span class="right tag dark-grey round">$6.8</span></h1>
+                <p class="text-grey">Octopus nigiri (2pcs)</p>
+                <hr>
+                <h1><b>BEEF ABURI</b> <span class="right tag dark-grey round">$5.8</span></h1>
+                <p class="text-grey">Seared wagyu nigiri (2pcs)</p>
+                <hr>
+              </div>
+              <div id="Hot-Food" class="container menu padding-32 white">
+                <h1><b>CURRY DON (VEG/KATSU/BEEF)</b> <span class="right tag dark-grey round">$10.8/$12.8/$13.8</span></h1>
+                <p class="text-grey">Japanese curry with rice</p>
+                <hr>
+                <h1><b>TERIYAKI DON (TOFU/CHICKEN/BEEF/SALMON)	</b> <span class="right tag dark-grey round">$11.8/$12.8/$13.8/$14.8</span></h1>
+                <p class="text-grey">Dish in teriyaki sauce with rice & salad</p>
+                <hr>
+                <h1><b>CHICKEN KATSU DON</b> <span class="right tag dark-grey round">$12.8</span></h1>
+                <p class="text-grey">Deep fried chicken breast with donburi sauce, egg, onion & rice</p>
+                <hr>
+                <h1><b>GARLIC BEEF DON</b> <span class="right tag dark-grey round">$14.8</span></h1>
+                <p class="text-grey">Deep fried tempura prawns & mixed vegetables with special soy sauce on the side</p>
+                <hr>
+                <h1><b>TEMPURA DON</b> <span class="right tag dark-grey round">$14.8</span></h1>
+                <p class="text-grey">Deep fried tempura prawns & mixed vegetables with special soy sauce on the side</p>
+                <hr>
+                <h1><b>SHOGAYAKI DON</b> <span class="right tag dark-grey round">$13.8</span></h1>
+                <p class="text-grey">Stir fried pork belly & vegetables in homemade gochujang chilli paste</p>
+                <hr>
+                <h1><b>CHILLI PRAWN DON</b> <span class="right tag dark-grey round">$16.8</span></h1>
+                <p class="text-grey">Stir fried tempura prawn & vegetables in homemade gochujang chilli paste</p>
+                <hr>
+                <h1><b>CRAB DON</b> <span class="right tag dark-grey round">$13.8</span></h1>
+                <p class="text-grey">Deep fried soft crab tempura with spicy mayo sauce, mixed salad, white sesame dressing, flying fish roe</p>
+                <hr>
+                <h1><b>EEL DON</b> <span class="right tag dark-grey round">$16.8</span></h1>
+                <p class="text-grey">Scrambled eggs, green onion and sea unagi with teriyaki sauce</p>
+                <hr>
+                <h1><b>OMURICE</b> <span class="right tag dark-grey round">$15.8</span></h1>
+                <p class="text-grey">Omelette on Japanese fried rice, chopped carrot, bean, onion, ham with demi-glace sauce</p>
+                <hr>
+                <h1><b>MISOYAKI PORTERHOUSE</b> <span class="right tag dark-grey round">$18.8</span></h1>
+                <p class="text-grey">Grilled porterhouse steak, broccolini with homemade sweet miso sauce</p>
+                <hr>
+                <h1><b>SALMON STEAK</b> <span class="right tag dark-grey round">$18.8</span></h1>
+                <p class="text-grey">Grilled salmon fillet & asparagus topped with salmon roe with wasabi mayonnaise</p>
+                <hr>
+              </div>
+              <div id="Bowl" class="container menu padding-32 white">
+                <h1><b>YAKISOBA (CHICKEN/BEEF/SEAFOOD)</b> <span class="right tag dark-grey round">$13.8/$15.8/$16.8</span></h1>
+                <p class="text-grey">Stir fried egg noodle in homemade yakisoba sauce with chicken/beef/seafood</p>
+                <hr>
+                <h1><b>TERIYAKI UDON (CHICKEN/BEEF/SEAFOOD)	</b> <span class="right tag dark-grey round">$13.8/$15.8/$16.8</span></h1>
+                <p class="text-grey">Stir fried udon in homemade teriyaki sauce with chicken/beef/seafood</p>
+                <h1><b>CREAMY SEAFOOD YAKISOBA</b> <span class="right tag dark-grey round">$16.8</span></h1>
+                <p class="text-grey">Linguine in cod roe cream sauce with assorted seafood (prawn, calamari, fish cake & mussel) & vegetables</p>
+                <hr>
+                <hr>
+              </div>
+              <div id="Udon" class="container menu padding-32 white">
+                <h1><b>UDON SOUP (VEGETABLE/CHICKEN/BEEF/SEAFOOD)</b> 
+                    <!-- <span class="tag grey round">Seasonal</span> -->
+                    <span class="right tag dark-grey round">$11.8/$13.8/$15.8/$16.8</span></h1>
+                <p class="text-grey">Udon noodle soup with vegetables/ teriyaki chicken/ teriyaki beef/ assorted seafood</p>
+                <hr>
+             
+                <h1><b>TEMPURA UDON SOUP</b> <span class="right tag dark-grey round">$15.8</span></h1>
+                <p class="text-grey">Udon noodle soup with mixed tempura (6pcs)</p>
+                <hr>
+                
+                <h1><b>CHICKEN KATSU UDON SOUP</b> <span class="right tag dark-grey round">$13.8</span></h1>
+                <p class="text-grey">Udon noodle soup with chicken cutlet</p>
+                <hr>
+                
+                <h1><b>KATSU TAMA UDON SOUP</b> <span class="right tag dark-grey round">$14.8</span></h1>
+                <p class="text-grey">Udon noodle soup with chicken cutlet topped with egg</p>
+                <hr>
+              </div>
+              <div id="Ramen" class="container menu padding-32 white">
+                <h1><b>TONKOTSU RAMEN	</b> <span class="right tag dark-grey round">$16.8</span></h1>
+                <p class="text-grey">Ramen with chashu pork belly, runny soft boiled eggs, scallions, fish cake, bamboo shoots, cabbage, corn kernels and nori</p>
+                <hr>
+                <h1><b>BEEF RAMEN</b> <span class="right tag dark-grey round">$17.8</span></h1>
+                <p class="text-grey">Ramen with stir fired teriyaki beef, runny soft boiled eggs, scallions, fish cake, bamboo shoots, cabbage, corn kernels and nori</p>
+                <hr>
+                <h1><b>CHICKEN KATSU RAMEN</b> <span class="right tag dark-grey round">$16.8</span></h1>
+                <p class="text-grey">Ramen with deep fired chicken breast, runny soft boiled eggs, scallions, fish cake, bamboo shoots, cabbage, corn kernels and nori</p>
+                <hr>
+                <h1><b>SEAFOOD RAMEN</b> <span class="right tag dark-grey round">$18.8</span></h1>
+                <p class="text-grey">Ramen with assorted seafood (prawn, calamari, scallop & mussel), runny soft boiled eggs, scallions, fish cake, bamboo shoots, cabbage, corn kernels and nori</p>
+                <hr>
+              </div>
+              <div id="Desserts" class="container menu padding-32 white">
+                <h1><b>GREEN TEA ICE CREAM</b> <span class="right tag dark-grey round">$5.8</span></h1>
+                <p class="text-grey">Classic Japanese green tea flavored ice cream topped with whipped cream and fresh strawberry</p>
+                <hr>
+                <h1><b>SESAME PANNA COTTA</b> <span class="right tag dark-grey round">$6.8</span></h1>
+                <p class="text-grey">Sesame flavored creamy milk jelly topped with fresh strawberry</p>
+                <hr>
+                <h1><b>BANANA TEMPURA</b> <span class="right tag dark-grey round">$9.8</span></h1>
+                <p class="text-grey">Deep fried banana & pineapple tempura with vanilla ice cream</p>
+                <hr>
+              </div>
+              <div id="Extra" class="container menu padding-32 white">
+                <h1><b>RICE</b> <span class="right tag dark-grey round">$2.5</span></h1>
+                <!-- <p class="text-grey">Pan fried pork dumpling with mayo</p> -->
+                <hr>
+                <h1><b>MISO SOUP</b> <span class="right tag dark-grey round">$2.5</span></h1>
+                <!-- <p class="text-grey">Pan fried pork dumpling with mayo</p> -->
+                <hr>
+              </div>
+              <br>
+          
+            </div>
+        </div>
+
+      
+        
+     
+
+        <!-- Contact -->
+        <div class="hh back contact-back container padding-64 blue-grey grayscale-min xlarge" id="myMap">
+            <div class="contact-info">
+            <h1 class="center jumbo" style="margin-bottom:64px">Contact</h1>
+            <p class="contact-info">Find us at some address at some place or call us at 05050515-122330</p>
+            <p class="contact-info"><span class="tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+            <p class="xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+            <form action="https://formspree.io/f/mzbozlyr" method="POST" id="my-form">
+                <p><input class="input padding-16 border" type="text" placeholder="Name" required name="Name" id="fullName"></p>
+                <p><input class="input padding-16 border" type="number" placeholder="How many people" required name="People" id="howMany"></p>
+                <p><input class="input padding-16 border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00" id="dayTame"></p>
+                <p><input class="input padding-16 border" type="text" placeholder="Message \ Special requirements" required name="Message" id="senMessage"></p>
+                <p><input class="input padding-16 border" type="text" placeholder="email" required name="email" id="email"></p>
+                <p><button class="button input light-grey block" type="submit" >SEND MESSAGE</button></p>
+            </form>
+            
+            <div id="status"></div>
+        </div>
+        <script src="send.js" charset="UTF-8"></script>
+        <footer class="center black padding-48 xxlarge">
+            <p>Powered by Frank Dong</p>
+        </footer>
+    </body>
+
+</html>

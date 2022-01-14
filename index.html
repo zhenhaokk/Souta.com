@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="second.css">
+        <script src="script.js" charset="utf-8"></script>
+        <title>SOUTA</title>
+    </head>
+
+    <body>
+        <div class="top-head hide-small">
+            <div class="bar xlarge black opacity hover-opacity-off animate-left" id="myNavbar">
+              
+              <a href="#" onclick="bar_close()" class="bar-item button">HOME</a>
+              <a href="p2.html" onclick="bar_close()" class="bar-item button">MENU</a>
+              <a href="#about" onclick="bar_close()" class="bar-item button">ABOUT</a>
+              <a href="#myMap" onclick="bar_close()" class="bar-item button">CONTACT</a>
+              
+            </div>
+        </div>
+      
+          
+          <!-- Overlay effect when opening sidebar on small screens -->
+          <div class="overlay hide-large animate-opacity" onclick="bar_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+       
+        <img src="logo.jpeg" class="logo image greyscale" style="width:100%;">
+        
+        <ul class="video_list">
+            <li><div><img  src="dafu.jpeg"></div></li>                    
+            <li><div><img  src="manyu.jpeg"></div></li>                    
+            <li><div><img  src="mocha.jpeg"></div></li>                    
+            <li><div><img  src="reman.jpeg"></div></li>                    
+            <li><div><img  src="sam.jpg"></div></li>                    
+            <li><div><img  src="shosi.jpeg"></div></li>                    
+            <li><div><img  src="sushi.jpeg"></div></li>                    
+            <li><div><img  src="tianfu.jpeg"></div></li>                    
+            <li><div><img  src="wud.jpeg"></div></li>                    
+        </ul> 
+      
+        <h1 class="ll oh center jumbo" style="margin-bottom:64px"><b>Opening Hours</b></h1>
+                      <div class="open row menu-container black padding-64 xxlarge content center border Tm tablink">
+                        <div class="row menu-container black padding-64 xxlarge content center border col s6">
+                          <p>Mon & Tue CLOSED</p>
+                          <p>Wednesday 10.00 - 24.00</p>
+                          <p>Thursday 10:00 - 24:00</p>
+                        </div>
+                        <div class="row menu-container black padding-64 xxlarge content center border col s6">
+                          <p>Friday 10:00 - 12:00</p>
+                          <p>Saturday 10:00 - 23:00</p>
+                          <p>Sunday Closed</p>
+                        </div>
+                      </div>
+
+      <!-- about -->
+      <div class="ll container padding-64 grayscale xlarge" id="about">
+
+        
+        <div class="content">
+        
+          <h1 class="center jumbo" style="margin-bottom:64px">About</h1>
+          <p class="contact-info"> SOUTA SOUTA SOUTA SOUTA SOUTA SOUTA SOUTA SOUTA SOUTA SOUTA SOUTA SOUTA SOUTA</p>
+         
+          
+          
+          
+        </div>
+    </div>
+    <div class="container-chef">
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="xx.jpeg">
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Yoh Asakura</h3>
+                    <Span class="post">Chef</Span>
+                </div>
+                <ul class="social">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+            </div>
+        </div>         
+</div>
+        <div class="row-map">
+            <h1 class="oh center jumbo Tm" style="margin-bottom:64px"><b>Location</b></h1>
+            <div class="back col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.211110841883!2d147.29357601604113!3d-42.84727534612971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaa6e74e998f6f125%3A0xd6b724479d23b2b7!2sShop%202-3%2F73-75%20Main%20Rd%2C%20Moonah%20TAS%207009!5e0!3m2!1szh-CN!2sau!4v1641714094716!5m2!1szh-CN!2sau"  width="100%" height="300" frameborder="0" style="border:0" allowfullscreen ></iframe>
+            </div>
+
+        </div>
+
+        <!-- Contact -->
+        <div class="hh back contact-back container padding-64 blue-grey grayscale-min xlarge" id="myMap">
+            <div class="contact-info">
+            <h1 class="hh center jumbo" style="margin-bottom:64px">Contact</h1>
+            <p class="contact-info back">Find us at some address at some place or call us at 05050515-122330</p>
+            <p class="contact-info"><span class="tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+            <p class="xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+            <form action="https://formspree.io/f/mzbozlyr" method="POST" id="my-form">
+                <p><input class="input padding-16 border" type="text" placeholder="Name" required name="Name" id="fullName"></p>
+                <p><input class="input padding-16 border" type="number" placeholder="How many people" required name="People" id="howMany"></p>
+                <p><input class="input padding-16 border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00" id="dayTame"></p>
+                <p><input class="input padding-16 border" type="text" placeholder="Message \ Special requirements" required name="Message" id="senMessage"></p>
+                <p><input class="input padding-16 border" type="text" placeholder="email" required name="email" id="email"></p>
+                <p><button class="button input light-grey block" type="submit" >SEND MESSAGE</button></p>
+            </form>
+            
+            <div id="status"></div>
+        </div>
+        <script src="send.js" charset="UTF-8"></script>
+
+        <footer class="footer center black padding-48 xxlarge">
+            <p class="ff">Powered by Frank Dong</p>
+            
+        </footer>
+    </body>
+
+</html>
